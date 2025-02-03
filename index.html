@@ -9,15 +9,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Alejandro Belgique</title>
+    <script>
+        function scrollAdjust() {
+            window.scrollBy(0, 50);
+        }
+    </script>
 </head>
 
 <body>
     <nav>
         <a href="#">Top</a>
-        <a href="#about">About Me</a>
-        <a href="#academics">Academics</a>
-        <a href="#music">Music</a>
-        <a href="#programming">Programming</a>
+        <a href="#about" onclick="scrollAdjust()">About Me</a>
+        <a href="#academics" onclick="scrollAdjust()">Academics</a>
+        <a href="#music" onclick="scrollAdjust()">Music</a>
+        <a href="#programming" onclick="scrollAdjust()">Programming</a>
     </nav>
     <h1>Alejandro Belgique</h1>
     <div id="about">
@@ -76,7 +81,7 @@
         <p>I will probably try to learn GDScript sometime.</p>
     </div>
     <footer>
-        <p>fancy footer here yipeeeeee</p>
+        <p>fancy footer here yipeeeeee, some copyright shat</p>
     </footer>
 </body>
 
