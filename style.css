@@ -4,6 +4,7 @@
 
 body {
     margin: 0;
+    background-color: #121212;
 }
 
 h1 {
@@ -25,6 +26,6 @@ nav {
     width: calc(100% - 10px);
     margin-left: 0;
     padding: 10px;
-    background-color: #abcdef;
+    background-color: #123456;
     border-bottom-right-radius: 30px;
 }
