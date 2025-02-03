@@ -1,5 +1,6 @@
 * {
     font-family: sans-serif;
+    color: #cdcdef;
 }
 
 body {
@@ -26,6 +27,6 @@ nav {
     width: calc(100% - 10px);
     margin-left: 0;
     padding: 10px;
-    background-color: #123456;
+    background-color: #012345;
     border-bottom-right-radius: 30px;
 }
