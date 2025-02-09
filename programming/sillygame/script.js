@@ -6,6 +6,18 @@ const Player = {
     speed      : 5,
     score      : 0,
     updatePos  : function() {
+        if (this.x < 0) {
+            this.x = 0;
+        }
+        if (this.x > 460) {
+            this.x = 460;
+        }
+        if (this.y < 0) {
+            this.y = 0;
+        }
+        if (this.y > 460) {
+            this.y = 460;
+        }
         this.element.style = "top: "+ this.y +"px; left: "+ this.x +"px;";
     },
     updateScore: function() {
