@@ -4,7 +4,7 @@ const Player = {
     y        : 0,
     speed    : 5,
     updatePos: function() {
-        this.element.style = "position: absolute; top: "+ this.y +"; left:"+ this.x +";";
+        this.element.style = "top: "+ this.y +"; left:"+ this.x +";";
     },
     moveRight: function() {
         this.x += this.speed;
