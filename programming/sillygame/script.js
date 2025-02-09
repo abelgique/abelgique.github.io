@@ -19,6 +19,14 @@ window.addEventListener("keydown", function(input) {
         if (Player.x > 0) {
             Player.x -= Player.speed;
         }
+    } else if ((input.code == "KeyW") || (input.code == "ArrowUp")) {
+        if (Player.y > 0) {
+            Player.y -= Player.speed;
+        }
+    } else if ((input.code == "KeyS") || (input.code == "ArrowDown")) {
+        if (Player.y < 500) {
+            Player.y += Player.speed;
+        }
     }
     Player.updatePos();
 });
