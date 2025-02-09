@@ -15,8 +15,8 @@ const Player = {
 }
 
 window.addEventListener("keydown", function(input) {
-    /* if ((input.code == "KeyD") || (input.code == "ArrowRight")) {
+    if ((input.code == "KeyD") || (input.code == "ArrowRight")) {
         Player.moveRight();
-    } */
+    }
     Player.element.innerHTML = input.code;
 });
