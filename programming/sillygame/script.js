@@ -31,7 +31,7 @@ Player.updateScore();
 
 // checks if player is touching coin enough, updates score and resets coin position
 function checkForCoin() {
-    if (((Coin.x - Player.x < 46) && (Coin.x - Player.x > -46)) && ((Coin.y - Player.y < 46) && (Coin.y - Player.y > -46))) {
+    if (((Coin.x - Player.x < 40) && (Coin.x - Player.x > -40)) && ((Coin.y - Player.y < 40) && (Coin.y - Player.y > -40))) {
         Player.score += 1;
         Player.updateScore();
         Coin.newPos();
