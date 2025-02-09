@@ -7,7 +7,9 @@ const Player = {
         this.element.style = "top: "+ this.y +"px; left:"+ this.x +"px;";
     },
     moveRight: function() {
-        this.x += this.speed;
+        if (this.x < 500) {
+            this.x += this.speed;
+        }
         this.updatePos();
     }
 }
@@ -15,7 +17,7 @@ const Player = {
 window.addEventListener("keydown", decode);
 
 function decode(input) {
-    if (input.code == "KeyD" || input.code == "ArrowRight") {
-        Player.moveRight()
+    if ((input.code == "KeyD") || (input.code == "ArrowRight")) {
+        Player.moveRight();
     }
 }
