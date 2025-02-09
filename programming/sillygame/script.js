@@ -12,7 +12,7 @@ const Player = {
 // movement
 window.addEventListener("keydown", function(input) {
     if ((input.code == "KeyD") || (input.code == "ArrowRight")) {
-        if (Player.x < 480) {
+        if (Player.x < 460) {
             Player.x += Player.speed;
         }
     } else if ((input.code == "KeyA") || (input.code == "ArrowLeft")) {
@@ -24,7 +24,7 @@ window.addEventListener("keydown", function(input) {
             Player.y -= Player.speed;
         }
     } else if ((input.code == "KeyS") || (input.code == "ArrowDown")) {
-        if (Player.y < 490) {
+        if (Player.y < 470) {
             Player.y += Player.speed;
         }
     }
