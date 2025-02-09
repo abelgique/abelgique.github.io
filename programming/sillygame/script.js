@@ -28,6 +28,7 @@ const Coin = {
     }
 }
 
+// speed bonus object
 const Sped = {
     element: document.getElementById("sped"),
     x      : 0,
