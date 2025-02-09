@@ -6,12 +6,6 @@ const Player = {
     speed    : 5,
     updatePos: function() {
         this.element.style = "top: "+ this.y +"px; left:"+ this.x +"px;";
-    },
-    moveRight: function() {
-        if (this.x < 500) {
-            this.x += this.speed;
-        }
-        this.updatePos();
     }
 }
 
