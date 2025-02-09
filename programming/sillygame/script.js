@@ -23,7 +23,7 @@ window.addEventListener("keydown", function(input) {
         }
     } else if ((input.code == "KeyA") || (input.code == "ArrowLeft")) {
         if (Player.x > 0) {
-            Player.x += Player.speed;
+            Player.x -= Player.speed;
         }
     }
     Player.updatePos();
