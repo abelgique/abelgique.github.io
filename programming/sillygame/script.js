@@ -10,6 +10,9 @@ const Player = {
     },
     updateScore: function() {
         this.element.innerHTML = this.score;
+        if ((score == 10) || (score == 20)) {
+            Sped.show();
+        }
     }
 }
 
@@ -25,6 +28,23 @@ const Coin = {
     }
 }
 
+const Sped = {
+    element: document.getElementById("sped"),
+    x      : 0,
+    y      : 0,
+    visible: false,
+    show   : function() {
+        this.x = Math.floor(Math.random() * 461);
+        this.y = Math.floor(Math.random() * 461);
+        this.visible = true;
+        this.element.style = "top: "+ this.y +"px; left: "+ this.x +"px; display: initial;";
+    },
+    hide   : function() {
+        this.element.style = "display: none;";
+        this.visible = false;
+    }
+}
+
 // some functions that need to be called at the start
 Coin.newPos();
 Player.updateScore();
@@ -35,6 +55,14 @@ function checkForCoin() {
         Player.score += 1;
         Player.updateScore();
         Coin.newPos();
+    }
+}
+
+// checks if player is touching sped enough and sped is actually visible, updates speed and hides sped
+function checkForSped() {
+    if (((Sped.x - Player.x < 40) && (Sped.x - Player.x > -40)) && ((Sped.y - Player.y < 40) && (Sped.y - Player.y > -40)) && (Sped.visible = true)) {
+        Player.speed *= 2;
+        Sped.hide();
     }
 }
 
@@ -59,4 +87,5 @@ window.addEventListener("keydown", function(input) {
     }
     Player.updatePos();
     checkForCoin();
+    checkForSped();
 });
