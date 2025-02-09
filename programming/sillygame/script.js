@@ -10,7 +10,7 @@ const Player = {
     },
     updateScore: function() {
         this.element.innerHTML = this.score;
-        if ((score == 10) || (score == 20)) {
+        if ((this.score == 10) || (this.score == 20)) {
             Sped.show();
         }
     }
@@ -61,7 +61,7 @@ function checkForCoin() {
 
 // checks if player is touching sped enough and sped is actually visible, updates speed and hides sped
 function checkForSped() {
-    if (((Sped.x - Player.x < 40) && (Sped.x - Player.x > -40)) && ((Sped.y - Player.y < 40) && (Sped.y - Player.y > -40)) && (Sped.visible = true)) {
+    if (((Sped.x - Player.x < 40) && (Sped.x - Player.x > -40)) && ((Sped.y - Player.y < 40) && (Sped.y - Player.y > -40)) && (Sped.visible == true)) {
         Player.speed *= 2;
         Sped.hide();
     }
