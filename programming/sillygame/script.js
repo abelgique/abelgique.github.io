@@ -1,3 +1,4 @@
+// player object
 const Player = {
     element  : document.getElementById("player"),
     x        : 0,
@@ -14,9 +15,16 @@ const Player = {
     }
 }
 
+// movement
 window.addEventListener("keydown", function(input) {
     if ((input.code == "KeyD") || (input.code == "ArrowRight")) {
-        Player.moveRight();
+        if (Player.x < 500) {
+            Player.x += Player.speed;
+        }
+    } else if ((input.code == "KeyA") || (input.code == "ArrowLeft")) {
+        if (Player.x > 0) {
+            Player.x += Player.speed;
+        }
     }
-    Player.element.innerHTML = input.code;
+    Player.updatePos();
 });
