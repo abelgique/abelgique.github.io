@@ -26,3 +26,10 @@ nav {
     background-color: #012345;
     border-bottom-right-radius: 30px;
 }
+
+.docsembed {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    height: 40%;
+}
