@@ -33,3 +33,9 @@ nav {
     margin-left: auto;
     height: 100%;
 }
+
+#about img {
+    float: right;
+    height: 100%;
+    width: auto;
+}
