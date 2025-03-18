@@ -38,19 +38,19 @@ nav {
     float: left;
     height: 200px; /* temp - with big photo adjust */
     width: auto;
-    margin-left: 10px;
+    margin: 10px;
 }
 
 #academics img {
     float: right;
     height: 200px;
     width: auto;
-    margin-right: 10px;
+    margin: 10px;
 }
 
 #music img {
     float: left;
     height: 200px;
     width: auto;
-    margin-left: 10px;
+    margin: 10px;
 }
