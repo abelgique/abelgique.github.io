@@ -54,3 +54,7 @@ nav {
     width: auto;
     margin: 10px;
 }
+
+#music li {
+    margin-left: 10px;
+}
