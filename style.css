@@ -48,6 +48,11 @@ nav {
     margin: 10px;
 }
 
+#academics ul {
+    position: relative;
+    left: 5px;
+}
+
 #music img {
     float: right;
     height: 200px;
