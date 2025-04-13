@@ -25,6 +25,7 @@ nav {
     padding: 10px;
     background-color: #012345;
     border-bottom-right-radius: 30px;
+    z-index: 99;
 }
 
 .docsembed {
